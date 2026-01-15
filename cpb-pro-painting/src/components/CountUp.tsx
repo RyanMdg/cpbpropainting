@@ -19,7 +19,7 @@ export default function CountUp({ end, duration = 2, delay = 0 }: CountUpProps) 
     const startDelay = setTimeout(() => {
       setHasStarted(true);
       let startTime: number | null = null;
-      const startValue = 0;
+      
       
       const animate = (currentTime: number) => {
         if (!startTime) startTime = currentTime;
