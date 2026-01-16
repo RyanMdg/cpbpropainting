@@ -26,6 +26,9 @@ import cloverdalePaintLogo from "../assets/images/cloverdale.png";
 import duluxLogo from "../assets/images/dulux.png";
 import CountUp from "../components/CountUp";
 import { HeroSlider } from "../components/HeroSlider";
+import ExteriorPaint from "../assets/images/exterior.png";
+import InteriorPaint from "../assets/images/interior.png";
+import Commercial from "../assets/images/comerrcial.png";
 
 export function Home() {
   const services = [
@@ -33,22 +36,19 @@ export function Home() {
       title: "Interior Painting",
       description:
         "Transform your indoor spaces with expert interior painting services.",
-      image:
-        "https://images.unsplash.com/photo-1742319096916-6c5c2c577b17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMHJvb20lMjBwYWludGluZ3xlbnwxfHx8fDE3Njg0MjE2MDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: InteriorPaint,
     },
     {
       title: "Exterior Painting",
       description:
         "Enhance your curb appeal with professional exterior painting solutions.",
-      image:
-        "https://images.unsplash.com/photo-1642369259805-8b2d772512fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMGV4dGVyaW9yJTIwcGFpbnRpbmd8ZW58MXx8fHwxNzY4Mzk4Njc2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: ExteriorPaint,
     },
     {
       title: "Commercial Painting",
       description:
         "Professional painting services for businesses and commercial properties.",
-      image:
-        "https://images.unsplash.com/photo-1633505650701-6104c4fc72c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBwYWludGVkJTIwaG9tZXxlbnwxfHx8fDE3Njg0MjE2MDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: Commercial,
     },
   ];
 

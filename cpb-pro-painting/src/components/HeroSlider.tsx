@@ -35,7 +35,7 @@ export function HeroSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -52,7 +52,7 @@ export function HeroSlider() {
   };
 
   return (
-    <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
+    <div className="relative h-150 lg:h-175 overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -69,7 +69,7 @@ export function HeroSlider() {
               alt={slides[currentSlide].title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
+            <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-black/30" />
           </div>
 
           {/* Content */}

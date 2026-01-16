@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { DubaiMap } from "../components/DubaiMap";
-
+import { motion } from "motion/react";
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -65,15 +65,34 @@ export function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#23282d] to-[#3a4149] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl mb-6">
-            Contact <span className="text-[#ffb601]">Us</span>
-          </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to transform your space? Get in touch with us today for a free
-            consultation and quote.
-          </p>
+
+      <section className="relative bg-[#23282d] text-white py-32 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1688372199140-cade7ae820fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwYWludGVycyUyMHdvcmtpbmd8ZW58MXx8fHwxNzY4NTM3MTgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral')`,
+          }}
+        />
+
+        {/* Dim Overlay */}
+        <div className="absolute inset-0 bg-[#23282d]/80" />
+
+        {/* Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="text-4xl sm:text-5xl mb-6">
+              Contact <span className="text-[#ffb601]">Us</span>
+            </h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Ready to transform your space? Get in touch with us today for a
+              free consultation and quote.
+            </p>
+          </motion.div>
         </div>
       </section>
 
