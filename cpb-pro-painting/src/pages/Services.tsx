@@ -1,11 +1,4 @@
-import {
-  Paintbrush,
-  Home,
-  Building2,
-  Sparkles,
-  Palette,
-  Shield,
-} from "lucide-react";
+import { Home, Building2, Sparkles, Palette, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import InteriorPaint from "../assets/images/interior.png";
 import ExteriorPaint from "../assets/images/exterior.png";
