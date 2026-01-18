@@ -153,15 +153,6 @@ export function Services() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-block mb-6"
-            >
-              <Wallpaper className="w-20 h-20 text-[#ffb601] mx-auto" />
-            </motion.div>
-
             <h1 className="text-5xl sm:text-7xl mb-6 uppercase tracking-wider">
               <span className="text-[#ffb601]">WALLPAPER</span>{" "}
               <span className="text-white">INSTALLATION</span>
@@ -328,7 +319,9 @@ export function Services() {
               className="text-center"
             >
               <Link
-                to={`/gallery/${collectionIndex === 0 ? "kids-nursery" : "luxury"}`}
+                to={`/gallery/${
+                  collectionIndex === 0 ? "kids-nursery" : "luxury"
+                }`}
                 className="inline-flex items-center px-8 py-3 bg-[#23282d] text-white rounded-lg hover:bg-[#ffb601] hover:text-[#23282d] transition-all shadow-lg group"
               >
                 View More Designs
