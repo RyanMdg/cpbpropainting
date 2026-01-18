@@ -216,6 +216,7 @@ export function Contact() {
                     <option value="exterior">Exterior Painting</option>
                     <option value="commercial">Commercial Painting</option>
                     <option value="cabinet">Cabinet Refinishing</option>
+                    <option value="wallpaper">Wallpaper Installation</option>
                     <option value="consultation">Color Consultation</option>
                     <option value="other">Other</option>
                   </select>
