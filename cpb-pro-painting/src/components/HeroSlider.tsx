@@ -82,7 +82,7 @@ export function HeroSlider() {
                   initial={{ y: -100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-                  className="text-[#ffb601] text-sm md:text-base tracking-[0.3em] uppercase mb-6"
+                  className="text-[#EAE0D5] text-sm md:text-base tracking-[0.3em] uppercase mb-6"
                 >
                   {slides[currentSlide].subtitle}
                 </motion.p>
@@ -119,13 +119,13 @@ export function HeroSlider() {
                 >
                   <Link
                     to="/contact"
-                    className="px-8 py-4 bg-[#ffb601] text-[#23282d] uppercase tracking-wider hover:bg-[#ffa500] transition-all shadow-lg hover:shadow-[#ffb601]/50"
+                    className="px-8 py-4 bg-[#C6AC8E] text-[#0A0908] uppercase tracking-wider hover:bg-[#0A0908] transition-all shadow-lg hover:shadow-[#C6AC8E]/50"
                   >
                     Get Free Quote
                   </Link>
                   <Link
                     to="/about"
-                    className="px-8 py-4 border-2 border-white text-white uppercase tracking-wider hover:bg-white hover:text-[#23282d] transition-all"
+                    className="px-8 py-4 border-2 border-white text-white uppercase tracking-wider hover:bg-white hover:text-[#0A0908] transition-all"
                   >
                     Learn More
                   </Link>
@@ -139,13 +139,13 @@ export function HeroSlider() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-[#ffb601] text-white backdrop-blur-sm transition-all z-10 group"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-[#C6AC8E] text-white backdrop-blur-sm transition-all z-10 group"
       >
         <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-[#ffb601] text-white backdrop-blur-sm transition-all z-10 group"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-[#C6AC8E] text-white backdrop-blur-sm transition-all z-10 group"
       >
         <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
       </button>
@@ -158,7 +158,7 @@ export function HeroSlider() {
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all ${
               currentSlide === index
-                ? "bg-[#ffb601] w-8"
+                ? "bg-[#C6AC8E] w-8"
                 : "bg-white/50 hover:bg-white/80"
             }`}
           />

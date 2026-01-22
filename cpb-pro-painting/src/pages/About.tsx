@@ -92,12 +92,12 @@ export function About() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-linear-to-br from-[#23282d] to-[#3a4149] text-white py-20">
+      <section className="bg-linear-to-br from-[#0A0908] to-[#3a4149] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl sm:text-5xl mb-6">
-                About <span className="text-[#ffb601]">CPB Pro Painting</span>
+                About <span className="text-[#C6AC8E]">CPB Pro Painting</span>
               </h1>
               <p className="text-xl text-gray-300 mb-6">
                 For over 15 years, CPB Pro Painting has been transforming spaces
@@ -122,15 +122,15 @@ export function About() {
       </section>
 
       {/* Achievements */}
-      <section className="py-16 bg-[#ffb601]">
+      <section className="py-16 bg-[#C6AC8E]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl text-[#23282d] mb-2">
+                <div className="text-5xl text-[#0A0908] mb-2">
                   {achievement.number}
                 </div>
-                <div className="text-[#23282d]">{achievement.label}</div>
+                <div className="text-[#0A0908]">{achievement.label}</div>
               </div>
             ))}
           </div>
@@ -146,8 +146,8 @@ export function About() {
               <p className="text-sm text-gray-500 uppercase tracking-wider mb-4">
                 ABOUT US
               </p>
-              <h2 className="text-4xl sm:text-5xl text-[#23282d] mb-6">
-                WE DELIVER <span className="text-[#ffb601]">LANDMARK</span>
+              <h2 className="text-4xl sm:text-5xl text-[#0A0908] mb-6">
+                WE DELIVER <span className="text-[#C6AC8E]">LANDMARK</span>
                 <br />
                 PROJECTS
               </h2>
@@ -169,15 +169,15 @@ export function About() {
                     className="flex items-start gap-4"
                   >
                     <div className="shrink-0">
-                      <div className="w-12 h-12 rounded bg-[#ffb601] flex items-center justify-center">
-                        <feature.icon className="w-6 h-6 text-[#23282d]" />
+                      <div className="w-12 h-12 rounded bg-[#C6AC8E] flex items-center justify-center">
+                        <feature.icon className="w-6 h-6 text-[#0A0908]" />
                       </div>
                     </div>
                     <div>
                       <p className="text-xs text-gray-600 mb-1">
                         {feature.title}
                       </p>
-                      <p className="text-sm font-semibold text-[#23282d]">
+                      <p className="text-sm font-semibold text-[#0A0908]">
                         {feature.subtitle}
                       </p>
                     </div>
@@ -188,8 +188,8 @@ export function About() {
 
             {/* Right Side - Values */}
             <div>
-              <h3 className="text-3xl text-[#23282d] mb-6">
-                OUR <span className="text-[#ffb601]">VALUES</span>
+              <h3 className="text-3xl text-[#0A0908] mb-6">
+                OUR <span className="text-[#0A0908]">VALUES</span>
               </h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Integrity is the foundation for everything that we do. Our
@@ -210,17 +210,17 @@ export function About() {
                       }
                       className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors"
                     >
-                      <span className="font-semibold text-[#23282d]">
+                      <span className="font-semibold text-[#0A0908]">
                         {item.title}
                       </span>
                       <div
                         className={`w-6 h-6 rounded flex items-center justify-center transition-colors ${
                           openAccordion === item.id
-                            ? "bg-[#ffb601]"
+                            ? "bg-[#C6AC8E]"
                             : "bg-gray-200"
                         }`}
                       >
-                        <span className="text-sm font-bold text-[#23282d]">
+                        <span className="text-sm font-bold text-[#0A0908]">
                           {openAccordion === item.id ? "−" : "+"}
                         </span>
                       </div>
@@ -242,8 +242,8 @@ export function About() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl text-[#23282d] mb-4">
-              Why Choose <span className="text-[#ffb601]">Us</span>
+            <h2 className="text-3xl sm:text-4xl text-[#0A0908] mb-4">
+              Why Choose <span className="text-[#0A0908]">Us</span>
             </h2>
             <p className="text-xl text-gray-600">
               We go above and beyond to deliver exceptional results
@@ -252,7 +252,7 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {whyChooseUs.map((item, index) => (
               <div key={index} className="flex items-start space-x-3">
-                <CheckCircle className="w-6 h-6 text-[#ffb601] shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-[#0A0908] shrink-0 mt-1" />
                 <span className="text-lg text-gray-700">{item}</span>
               </div>
             ))}
@@ -261,29 +261,29 @@ export function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-[#23282d] text-white">
+      <section className="py-20 bg-[#EAE0D5] text-[#0A0908]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl mb-4">
-              Meet Our <span className="text-[#ffb601]">Team</span>
+              Meet Our <span className="text-[#0A0908]">Team</span>
             </h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-[#0A0908]">
               Skilled professionals dedicated to excellence
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <div key={index} className="text-center">
-                <div className="relative overflow-hidden rounded-lg mb-6 group">
+                <div className="relative overflow-hidden mb-6 group">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-[#23282d] to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#0A0908]/40 to-transparent opacity-60" />
                 </div>
                 <h3 className="text-xl mb-2">{member.name}</h3>
-                <p className="text-[#ffb601]">{member.role}</p>
+                <p className="text-[#0A0908]">{member.role}</p>
               </div>
             ))}
           </div>
@@ -291,17 +291,17 @@ export function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-linear-to-r from-[#ffb601] to-[#ffa500]">
+      <section className="py-20 bg-linear-to-r from-[#EAE0D5] to-[#C6AC8E]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl text-[#23282d] mb-6">
+          <h2 className="text-3xl sm:text-4xl text-[#0A0908] mb-6">
             Let's Work Together
           </h2>
-          <p className="text-xl text-[#23282d] mb-8">
+          <p className="text-xl text-[#0A0908] mb-8">
             Experience the CPB Pro Painting difference on your next project
           </p>
           <Link
             to="/contact"
-            className="inline-block px-8 py-4 bg-[#23282d] text-white hover:bg-[#1a1e22] transition-colors rounded-md"
+            className="inline-block px-8 py-4 bg-[#22333B] text-[#EAE0D5] hover:bg-[#0A0908] transition-colors rounded-md"
           >
             Get Your Free Quote
           </Link>

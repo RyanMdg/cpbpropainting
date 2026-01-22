@@ -353,7 +353,7 @@ export function WallpaperGallery() {
             className="w-full h-full object-cover"
           />
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#23282d]/70 via-[#23282d]/50 to-[#23282d]/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0908]/70 via-[#0A0908]/50 to-[#0A0908]/90" />
 
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -369,18 +369,18 @@ export function WallpaperGallery() {
                 transition={{ delay: 0.2 }}
                 className="flex items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-300 uppercase tracking-widest mb-4 sm:mb-8"
               >
-                <Link to="/" className="hover:text-[#ffb601] transition-colors">
+                <Link to="/" className="hover:text-[#0A0908] transition-colors">
                   Home
                 </Link>
-                <span className="text-[#ffb601]">/</span>
+                <span className="text-[#0A0908]">/</span>
                 <Link
                   to="/services"
-                  className="hover:text-[#ffb601] transition-colors"
+                  className="hover:text-[#0A0908] transition-colors"
                 >
                   Services
                 </Link>
-                <span className="text-[#ffb601]">/</span>
-                <span className="text-[#ffb601]">{categoryConfig.title}</span>
+                <span className="text-[#0A0908]">/</span>
+                <span className="text-[#0A0908]">{categoryConfig.title}</span>
               </motion.div>
 
               {/* Title */}
@@ -390,7 +390,7 @@ export function WallpaperGallery() {
                 transition={{ delay: 0.4 }}
                 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white mb-2 sm:mb-4 uppercase tracking-wider"
               >
-                <span className="text-[#ffb601]">{categoryConfig.title}</span>
+                <span className="text-[#0A0908]">{categoryConfig.title}</span>
               </motion.h1>
 
               <motion.p
@@ -419,7 +419,7 @@ export function WallpaperGallery() {
                 className="flex items-center justify-center gap-4 sm:gap-8 lg:gap-12"
               >
                 <div className="text-center">
-                  <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ffb601]">
+                  <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0A0908]">
                     {wallpapers.length}+
                   </p>
                   <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">
@@ -428,7 +428,7 @@ export function WallpaperGallery() {
                 </div>
                 <div className="w-px h-8 sm:h-12 bg-white/20" />
                 <div className="text-center">
-                  <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ffb601]">
+                  <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0A0908]">
                     {styles.length}
                   </p>
                   <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">
@@ -437,7 +437,7 @@ export function WallpaperGallery() {
                 </div>
                 <div className="w-px h-8 sm:h-12 bg-white/20" />
                 <div className="text-center">
-                  <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ffb601]">Premium</p>
+                  <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0A0908]">Premium</p>
                   <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">
                     Quality
                   </p>
@@ -459,7 +459,7 @@ export function WallpaperGallery() {
             transition={{ duration: 1.5, repeat: Infinity }}
             className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2"
           >
-            <div className="w-1 h-3 bg-[#ffb601] rounded-full" />
+            <div className="w-1 h-3 bg-[#C6AC8E] rounded-full" />
           </motion.div>
         </motion.div>
       </section>
@@ -470,7 +470,7 @@ export function WallpaperGallery() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
             {/* Filters */}
             <div className="flex flex-wrap items-center gap-4">
-              <div className="flex items-center gap-2 text-[#23282d]">
+              <div className="flex items-center gap-2 text-[#0A0908]">
                 <Filter className="w-5 h-5" />
                 <span className="font-medium">Filters:</span>
               </div>
@@ -481,7 +481,7 @@ export function WallpaperGallery() {
                 <select
                   value={selectedStyle}
                   onChange={(e) => setSelectedStyle(e.target.value)}
-                  className="px-4 py-2 bg-gray-100 border-0 rounded-lg text-sm font-medium text-[#23282d] focus:ring-2 focus:ring-[#ffb601] cursor-pointer"
+                  className="px-4 py-2 bg-gray-100 border-0 rounded-lg text-sm font-medium text-[#0A0908] focus:ring-2 focus:ring-[#C6AC8E] cursor-pointer"
                 >
                   <option value="All">All Styles</option>
                   {styles.map((style) => (
@@ -498,7 +498,7 @@ export function WallpaperGallery() {
                 <select
                   value={selectedRoom}
                   onChange={(e) => setSelectedRoom(e.target.value)}
-                  className="px-4 py-2 bg-gray-100 border-0 rounded-lg text-sm font-medium text-[#23282d] focus:ring-2 focus:ring-[#ffb601] cursor-pointer"
+                  className="px-4 py-2 bg-gray-100 border-0 rounded-lg text-sm font-medium text-[#0A0908] focus:ring-2 focus:ring-[#C6AC8E] cursor-pointer"
                 >
                   <option value="All">All Rooms</option>
                   {rooms.map((room) => (
@@ -510,8 +510,8 @@ export function WallpaperGallery() {
               </div>
 
               {/* Results Count */}
-              <div className="px-4 py-2 bg-[#ffb601]/10 rounded-lg">
-                <span className="text-sm font-medium text-[#23282d]">
+              <div className="px-4 py-2 bg-[#C6AC8E]/10 rounded-lg">
+                <span className="text-sm font-medium text-[#0A0908]">
                   {filteredWallpapers.length} designs found
                 </span>
               </div>
@@ -523,8 +523,8 @@ export function WallpaperGallery() {
                 onClick={() => setViewMode("masonry")}
                 className={`p-2 rounded-md transition-all ${
                   viewMode === "masonry"
-                    ? "bg-[#ffb601] text-[#23282d]"
-                    : "text-gray-500 hover:text-[#23282d]"
+                    ? "bg-[#C6AC8E] text-[#0A0908]"
+                    : "text-gray-500 hover:text-[#0A0908]"
                 }`}
               >
                 <LayoutGrid className="w-5 h-5" />
@@ -533,8 +533,8 @@ export function WallpaperGallery() {
                 onClick={() => setViewMode("grid")}
                 className={`p-2 rounded-md transition-all ${
                   viewMode === "grid"
-                    ? "bg-[#ffb601] text-[#23282d]"
-                    : "text-gray-500 hover:text-[#23282d]"
+                    ? "bg-[#C6AC8E] text-[#0A0908]"
+                    : "text-gray-500 hover:text-[#0A0908]"
                 }`}
               >
                 <Grid3X3 className="w-5 h-5" />
@@ -590,7 +590,7 @@ export function WallpaperGallery() {
                   </div>
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#23282d] via-[#23282d]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0908] via-[#0A0908]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
                   {/* Quick Actions */}
                   <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
@@ -604,7 +604,7 @@ export function WallpaperGallery() {
                       className={`w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md transition-colors ${
                         favorites.includes(wallpaper.id)
                           ? "bg-red-500 text-white"
-                          : "bg-white/90 text-[#23282d] hover:bg-[#ffb601]"
+                          : "bg-white/90 text-[#0A0908] hover:bg-[#C6AC8E]"
                       }`}
                     >
                       <Heart
@@ -617,7 +617,7 @@ export function WallpaperGallery() {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       onClick={(e) => e.stopPropagation()}
-                      className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-[#23282d] hover:bg-[#ffb601] backdrop-blur-md transition-colors"
+                      className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-[#0A0908] hover:bg-[#C6AC8E] backdrop-blur-md transition-colors"
                     >
                       <ZoomIn className="w-5 h-5" />
                     </motion.button>
@@ -626,7 +626,7 @@ export function WallpaperGallery() {
                   {/* Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="px-3 py-1 bg-[#ffb601] text-[#23282d] text-xs font-bold uppercase tracking-wider rounded-full">
+                      <span className="px-3 py-1 bg-[#C6AC8E] text-[#0A0908] text-xs font-bold uppercase tracking-wider rounded-full">
                         {wallpaper.style}
                       </span>
                       <span className="px-3 py-1 bg-white/20 text-white text-xs font-medium rounded-full backdrop-blur-md">
@@ -642,7 +642,7 @@ export function WallpaperGallery() {
                   </div>
 
                   {/* Default Label */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#23282d]/80 to-transparent group-hover:opacity-0 transition-opacity duration-500">
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#0A0908]/80 to-transparent group-hover:opacity-0 transition-opacity duration-500">
                     <p className="text-white font-semibold">
                       {wallpaper.title}
                     </p>
@@ -661,7 +661,7 @@ export function WallpaperGallery() {
               className="text-center py-20"
             >
               <Wallpaper className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-              <h3 className="text-2xl text-[#23282d] mb-2">No designs found</h3>
+              <h3 className="text-2xl text-[#0A0908] mb-2">No designs found</h3>
               <p className="text-gray-500 mb-6">
                 Try adjusting your filters to see more results
               </p>
@@ -670,7 +670,7 @@ export function WallpaperGallery() {
                   setSelectedStyle("All");
                   setSelectedRoom("All");
                 }}
-                className="px-6 py-3 bg-[#ffb601] text-[#23282d] font-bold rounded-lg hover:bg-[#ffa500] transition-colors"
+                className="px-6 py-3 bg-[#C6AC8E] text-[#0A0908] font-bold rounded-lg hover:bg-[#0A0908] transition-colors"
               >
                 Clear Filters
               </button>
@@ -680,8 +680,8 @@ export function WallpaperGallery() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-[#23282d] relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#23282d] via-[#2d3339] to-[#23282d]" />
+      <section className="py-24 bg-[#EAE0D5] relative overflow-hidden">
+        <div className="absolute inset-0 bg-linear-to-br from-[#EAE0D5]/60 via-[#EAE0D5] to-[#EAE0D5]/60" />
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.div
@@ -690,25 +690,25 @@ export function WallpaperGallery() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <Sparkles className="w-16 h-16 text-[#ffb601] mx-auto mb-6" />
-            <h2 className="text-4xl sm:text-5xl text-white mb-6 uppercase tracking-wide">
+            <Sparkles className="w-16 h-16 text-[#0A0908] mx-auto mb-6" />
+            <h2 className="text-4xl sm:text-5xl text-[#0A0908] mb-6 uppercase tracking-wide">
               Love What You See?
             </h2>
-            <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+            <p className="text-xl text-[#0A0908] mb-10 max-w-2xl mx-auto">
               Let us bring your dream walls to life. Book a free consultation
               and get expert advice on the perfect wallpaper for your space.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center px-10 py-5 bg-[#ffb601] text-[#23282d] text-lg font-bold uppercase tracking-wider rounded-lg hover:bg-[#ffa500] transition-all shadow-2xl hover:scale-105"
+                className="inline-flex items-center px-10 py-5 bg-[#C6AC8E] text-[#0A0908] text-lg font-bold uppercase tracking-wider rounded-lg hover:bg-[#0A0908] transition-all shadow-2xl hover:scale-105"
               >
                 Book Consultation
                 <ArrowRight className="ml-3 w-6 h-6" />
               </Link>
               <Link
                 to="/services"
-                className="inline-flex items-center px-10 py-5 border-2 border-white text-white text-lg font-bold uppercase tracking-wider rounded-lg hover:bg-white hover:text-[#23282d] transition-all"
+                className="inline-flex items-center px-10 py-5 border-2 border-[#0A0908] text-[#0A0908] text-lg font-bold uppercase tracking-wider rounded-lg hover:bg-[#0A0908] hover:text-white transition-all"
               >
                 View All Services
               </Link>
@@ -735,7 +735,7 @@ export function WallpaperGallery() {
               exit={{ opacity: 0, scale: 0 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
               onClick={() => setSelectedImage(null)}
-              className="fixed top-4 right-4 lg:absolute lg:top-6 lg:right-6 w-10 h-10 lg:w-12 lg:h-12 bg-[#23282d]/80 lg:bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-[#ffb601] hover:text-[#23282d] transition-colors z-20"
+              className="fixed top-4 right-4 lg:absolute lg:top-6 lg:right-6 w-10 h-10 lg:w-12 lg:h-12 bg-[#0A0908]/80 lg:bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-[#C6AC8E] hover:text-[#0A0908] transition-colors z-20"
             >
               <X className="w-5 h-5 lg:w-6 lg:h-6" />
             </motion.button>
@@ -750,7 +750,7 @@ export function WallpaperGallery() {
                 e.stopPropagation();
                 navigateImage("prev");
               }}
-              className="hidden lg:flex absolute left-4 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 rounded-full items-center justify-center text-white hover:bg-[#ffb601] hover:text-[#23282d] transition-colors z-10"
+              className="hidden lg:flex absolute left-4 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 rounded-full items-center justify-center text-white hover:bg-[#C6AC8E] hover:text-[#0A0908] transition-colors z-10"
             >
               <ChevronLeft className="w-8 h-8" />
             </motion.button>
@@ -763,7 +763,7 @@ export function WallpaperGallery() {
                 e.stopPropagation();
                 navigateImage("next");
               }}
-              className="hidden lg:flex absolute right-4 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 rounded-full items-center justify-center text-white hover:bg-[#ffb601] hover:text-[#23282d] transition-colors z-10"
+              className="hidden lg:flex absolute right-4 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 rounded-full items-center justify-center text-white hover:bg-[#C6AC8E] hover:text-[#0A0908] transition-colors z-10"
             >
               <ChevronRight className="w-8 h-8" />
             </motion.button>
@@ -774,7 +774,7 @@ export function WallpaperGallery() {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.8, opacity: 0, y: 50 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="max-w-5xl w-full my-8 lg:my-0 flex flex-col lg:flex-row bg-white rounded-2xl overflow-hidden shadow-2xl"
+              className="max-w-5xl w-full my-8 lg:my-0 flex flex-col lg:flex-row bg-white overflow-hidden shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Image */}
@@ -789,15 +789,15 @@ export function WallpaperGallery() {
               {/* Info Panel */}
               <div className="lg:w-1/3 p-6 sm:p-8 flex flex-col flex-shrink-0">
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="px-3 py-1 bg-[#ffb601] text-[#23282d] text-xs font-bold uppercase tracking-wider rounded-full">
+                  <span className="px-3 py-1 bg-[#C6AC8E] text-[#0A0908] text-xs font-bold uppercase tracking-wider rounded-full">
                     {selectedImage.style}
                   </span>
-                  <span className="px-3 py-1 bg-gray-100 text-[#23282d] text-xs font-medium rounded-full">
+                  <span className="px-3 py-1 bg-gray-100 text-[#0A0908] text-xs font-medium rounded-full">
                     {selectedImage.room}
                   </span>
                 </div>
 
-                <h2 className="text-3xl font-bold text-[#23282d] mb-4">
+                <h2 className="text-3xl font-bold text-[#0A0908] mb-4">
                   {selectedImage.title}
                 </h2>
 
@@ -808,19 +808,19 @@ export function WallpaperGallery() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between py-3 border-t border-gray-100">
                     <span className="text-gray-500">Quality</span>
-                    <span className="font-semibold text-[#23282d]">
+                    <span className="font-semibold text-[#0A0908]">
                       Premium
                     </span>
                   </div>
                   <div className="flex items-center justify-between py-3 border-t border-gray-100">
                     <span className="text-gray-500">Material</span>
-                    <span className="font-semibold text-[#23282d]">
+                    <span className="font-semibold text-[#0A0908]">
                       Non-Woven
                     </span>
                   </div>
                   <div className="flex items-center justify-between py-3 border-t border-gray-100">
                     <span className="text-gray-500">Installation</span>
-                    <span className="font-semibold text-[#23282d]">
+                    <span className="font-semibold text-[#0A0908]">
                       Professional
                     </span>
                   </div>
@@ -834,7 +834,7 @@ export function WallpaperGallery() {
                     className={`flex-1 py-3 rounded-lg font-bold transition-colors flex items-center justify-center gap-2 ${
                       favorites.includes(selectedImage.id)
                         ? "bg-red-500 text-white"
-                        : "bg-gray-100 text-[#23282d] hover:bg-gray-200"
+                        : "bg-gray-100 text-[#0A0908] hover:bg-gray-200"
                     }`}
                   >
                     <Heart
@@ -849,7 +849,7 @@ export function WallpaperGallery() {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="flex-1 py-3 bg-gray-100 text-[#23282d] rounded-lg font-bold hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
+                    className="flex-1 py-3 bg-gray-100 text-[#0A0908] rounded-lg font-bold hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
                   >
                     <Share2 className="w-5 h-5" />
                     Share
@@ -858,7 +858,7 @@ export function WallpaperGallery() {
 
                 <Link
                   to="/contact"
-                  className="mt-4 w-full py-4 bg-[#ffb601] text-[#23282d] rounded-lg font-bold text-center hover:bg-[#ffa500] transition-colors flex items-center justify-center gap-2"
+                  className="mt-4 w-full py-4 bg-[#C6AC8E] text-[#0A0908] rounded-lg font-bold text-center hover:bg-[#0A0908] transition-colors flex items-center justify-center gap-2"
                 >
                   Request This Design
                   <ArrowRight className="w-5 h-5" />

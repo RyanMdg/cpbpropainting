@@ -1,6 +1,6 @@
 export function DubaiMap() {
   return (
-    <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-md">
+    <div className="w-full h-[400px] overflow-hidden shadow-md">
       <iframe
         title="Dubai Map"
         src="https://www.google.com/maps?q=Dubai,UAE&z=12&output=embed"

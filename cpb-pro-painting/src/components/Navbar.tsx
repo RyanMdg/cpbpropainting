@@ -42,19 +42,19 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center text-sm text-gray-600">
-              <MapPin size={14} className="mr-2 text-[#23282d]" />
+              <MapPin size={14} className="mr-2 text-[#0A0908]" />
               6475 Bruce St, Vancouver, BC V5P 3M8
             </div>
             <div className="flex items-center gap-4">
               <a
                 href="#"
-                className="text-gray-600 hover:text-[#ffb601] transition-colors"
+                className="text-gray-600 hover:text-[#0A0908] transition-colors"
               >
                 <Facebook size={16} />
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-[#ffb601] transition-colors"
+                className="text-gray-600 hover:text-[#0A0908] transition-colors"
               >
                 <Instagram size={16} />
               </a>
@@ -78,7 +78,7 @@ export function Navbar() {
                 <p className="text-sm text-gray-600 mb-1">Call Us</p>
                 <a
                   href="tel:+17782328002"
-                  className="text-[#23282d] hover:text-[#ffb601] transition-colors"
+                  className="text-[#0A0908] hover:text-[#0A0908] transition-colors"
                 >
                   (+1) 778-232-8002
                 </a>
@@ -87,14 +87,14 @@ export function Navbar() {
                 <p className="text-sm text-gray-600 mb-1">Email Us</p>
                 <a
                   href="mailto:hello@cpbpropainting.ca"
-                  className="text-[#23282d] hover:text-[#ffb601] transition-colors"
+                  className="text-[#0A0908] hover:text-[#0A0908] transition-colors"
                 >
                   hello@cpbpropainting.ca
                 </a>
               </div>
               <Link
                 to="/contact"
-                className="px-6 py-3 bg-[#ffb601] text-[#23282d] hover:bg-[#ffa500] transition-all shadow-md hover:shadow-lg"
+                className="px-6 py-3 bg-[#C6AC8E] text-[#0A0908] hover:bg-[#0A0908] transition-all shadow-md hover:shadow-lg"
               >
                 Get A Quote
               </Link>
@@ -103,7 +103,7 @@ export function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 rounded-md text-[#23282d] hover:bg-gray-100 transition-colors"
+              className="lg:hidden p-2 rounded-md text-[#0A0908] hover:bg-gray-100 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -115,8 +115,8 @@ export function Navbar() {
       <motion.nav
         className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-[#23282d]/95 backdrop-blur-lg shadow-2xl"
-            : "bg-[#23282d]"
+            ? "bg-[#22333B]/95 backdrop-blur-lg shadow-2xl"
+            : "bg-[#22333B]"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -129,8 +129,8 @@ export function Navbar() {
                   to={link.path}
                   className={`px-6 py-5 text-sm tracking-wider transition-all duration-300 relative ${
                     isActive(link.path)
-                      ? "text-[#ffb601] bg-[#ffb601]/10"
-                      : "text-white hover:text-[#ffb601] hover:bg-white/5"
+                      ? "text-white bg-[#C6AC8E]/30"
+                      : "text-white hover:text-white hover:bg-[#C6AC8E]/20"
                   }`}
                 >
                   {link.label}
@@ -139,7 +139,7 @@ export function Navbar() {
             </div>
 
             {/* Search Icon */}
-            <button className="hidden lg:flex p-3 text-white hover:text-[#ffb601] transition-colors">
+            <button className="hidden lg:flex p-3 text-white hover:text-white transition-colors">
               <Search size={20} />
             </button>
           </div>
@@ -167,7 +167,7 @@ export function Navbar() {
                         onClick={() => setIsOpen(false)}
                         className={`block px-4 py-3 text-sm tracking-wider transition-colors ${
                           isActive(link.path)
-                            ? "bg-[#ffb601] text-[#23282d]"
+                            ? "bg-[#C6AC8E] text-white"
                             : "text-white hover:bg-white/10"
                         }`}
                       >
@@ -180,14 +180,14 @@ export function Navbar() {
                       href="tel:+17782328002"
                       className="flex items-center text-white text-sm"
                     >
-                      <Phone size={16} className="mr-2 text-[#ffb601]" />
+                      <Phone size={16} className="mr-2 text-[#0A0908]" />
                       (+1) 778-232-8002
                     </a>
                     <a
                       href="mailto:hello@cpbpropainting.ca"
                       className="flex items-center text-white text-sm"
                     >
-                      <Mail size={16} className="mr-2 text-[#ffb601]" />
+                      <Mail size={16} className="mr-2 text-[#0A0908]" />
                       hello@cpbpropainting.ca
                     </a>
                   </div>
