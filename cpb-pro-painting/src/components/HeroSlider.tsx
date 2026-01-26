@@ -2,33 +2,60 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { Link } from "react-router-dom";
-import workSample1 from "../assets/images/612259937_2073330886767474_5233871115005836255_n.jpg";
-import workSample2 from "../assets/images/sample2.png";
-import workSample3 from "../assets/images/sample3.png";
+import slide1 from "../assets/images/slide_1.jpg";
+import slide2 from "../assets/images/slide_2.jpg";
+import slide3 from "../assets/images/slide_3.jpg";
+import slide4 from "../assets/images/slide_4.jpg";
+import slide5 from "../assets/images/slide_5.jpg";
+import slide6 from "../assets/images/slide_6.jpg";
+
+interface SlideData {
+  type: "single" | "split";
+  image?: string;
+  leftImage?: string;
+  rightImage?: string;
+  subtitle: string;
+  title: string;
+  description: string;
+}
 
 export function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
+  const slides: SlideData[] = [
     {
-      image: workSample1,
-      subtitle: "PROFESSIONAL EXCELLENCE",
-      title: "WE TRANSFORM SPACES WITH COLOR",
+      type: "single",
+      image: slide6,
+      subtitle: "PREMIUM WALLPAPER INSTALLATION",
+      title: "LUXURY WALLPAPER FIXING IN DUBAI",
       description:
-        "Quality craftsmanship and attention to detail in every brushstroke",
+        "Transform your space with flawless wallpaper installation done by skilled professionals",
     },
     {
-      image: workSample2,
-      subtitle: "LUXURY FINISHES",
-      title: "WE BELIEVE IN PERFECTION",
-      description: "Premium painting services that exceed your expectations",
+      type: "split",
+      leftImage: slide1,
+      rightImage: slide2,
+      subtitle: "RESIDENTIAL SERVICES",
+      title: "ELEGANT HOME TRANSFORMATIONS",
+      description:
+        "Stylish wallpaper solutions for bedrooms, living rooms, and dining areas",
     },
     {
-      image: workSample3,
-      subtitle: "MODERN SOLUTIONS",
-      title: "WE CREATE BEAUTIFUL HOMES",
+      type: "split",
+      leftImage: slide3,
+      rightImage: slide4,
+      subtitle: "COMMERCIAL SERVICES",
+      title: "PROFESSIONAL BUSINESS SPACES",
       description:
-        "Expert painters delivering stunning results for residential and commercial properties",
+        "Reliable wallpaper installation for offices, hotels, and retail spaces",
+    },
+    {
+      type: "single",
+      image: slide5,
+      subtitle: "EXPERT CRAFTSMANSHIP",
+      title: "PRECISION IN EVERY DETAIL",
+      description:
+        "Clean work, perfect finishes, and on-time service—every time",
     },
   ];
 
@@ -51,6 +78,8 @@ export function HeroSlider() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
+  const currentSlideData = slides[currentSlide];
+
   return (
     <div className="relative h-150 lg:h-175 overflow-hidden">
       <AnimatePresence mode="wait">
@@ -62,13 +91,35 @@ export function HeroSlider() {
           transition={{ duration: 0.5 }}
           className="absolute inset-0"
         >
-          {/* Background Image */}
+          {/* Background Image(s) */}
           <div className="absolute inset-0">
-            <img
-              src={slides[currentSlide].image}
-              alt={slides[currentSlide].title}
-              className="w-full h-full object-cover"
-            />
+            {currentSlideData.type === "single" ? (
+              <div
+                className="w-full h-full bg-cover bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: `url(${currentSlideData.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center 40%",
+                }}
+              />
+            ) : (
+              <div className="flex h-full">
+                <div className="w-1/2 h-full overflow-hidden">
+                  <img
+                    src={currentSlideData.leftImage}
+                    alt={currentSlideData.title}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="w-1/2 h-full overflow-hidden">
+                  <img
+                    src={currentSlideData.rightImage}
+                    alt={currentSlideData.title}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            )}
             <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-black/30" />
           </div>
 
@@ -84,7 +135,7 @@ export function HeroSlider() {
                   transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
                   className="text-[#EAE0D5] text-sm md:text-base tracking-[0.3em] uppercase mb-6"
                 >
-                  {slides[currentSlide].subtitle}
+                  {currentSlideData.subtitle}
                 </motion.p>
 
                 {/* SECOND LINE - FROM RIGHT */}
@@ -95,7 +146,7 @@ export function HeroSlider() {
                   transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
                   className="text-4xl md:text-5xl lg:text-7xl text-white mb-6 tracking-tight"
                 >
-                  {slides[currentSlide].title}
+                  {currentSlideData.title}
                 </motion.h1>
 
                 {/* THIRD LINE - FROM LEFT */}
@@ -106,7 +157,7 @@ export function HeroSlider() {
                   transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
                   className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto"
                 >
-                  {slides[currentSlide].description}
+                  {currentSlideData.description}
                 </motion.p>
 
                 {/* BUTTONS - FROM BOTTOM */}
@@ -119,7 +170,7 @@ export function HeroSlider() {
                 >
                   <Link
                     to="/contact"
-                    className="px-8 py-4 bg-[#C6AC8E] text-[#0A0908] uppercase tracking-wider hover:bg-[#0A0908] transition-all shadow-lg hover:shadow-[#C6AC8E]/50"
+                    className="px-8 py-4 bg-[#C6AC8E] text-[#0A0908] uppercase tracking-wider hover:bg-white transition-all shadow-lg hover:shadow-[#C6AC8E]/50"
                   >
                     Get Free Quote
                   </Link>

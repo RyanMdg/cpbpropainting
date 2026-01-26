@@ -9,19 +9,28 @@ import {
   MapPin,
   Paintbrush,
   Droplet,
-  Timer,
-  DollarSign,
   Sparkles,
   ThumbsUp,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import workSample1 from "../assets/images/wallpaper_5.png";
 import workSample2 from "../assets/images/wallpaper_6.png";
-import workSample3 from "../assets/images/wallpaper_7.png";
-import workSample4 from "../assets/images/wallpaper_4.png";
 import exteriorPainting from "../assets/images/exterior2.png";
 import workSample5 from "../assets/images/wallpaper_3.png";
-import Wallpaper10 from "../assets/images/wallpaper10.png"
+import Wallpaper10 from "../assets/images/wallpaper10.png";
+import slide1 from "../assets/images/slide_1.jpg";
+import slide2 from "../assets/images/slide_2.jpg";
+import slide3 from "../assets/images/slide_3.jpg";
+import slide4 from "../assets/images/slide_4.jpg";
+import slide5 from "../assets/images/slide_5.jpg";
+import slide6 from "../assets/images/slide_6.jpg";
+import high1 from "../assets/images/high_1.jpg";
+import high2 from "../assets/images/high_2.jpg";
+import high3 from "../assets/images/high_3.jpg";
+import high4 from "../assets/images/high_4.jpg";
+import high5 from "../assets/images/high_5.jpg";
+import high6 from "../assets/images/high_6.jpg";
+import high7 from "../assets/images/high_7.jpg";
+import high8 from "../assets/images/high_8.jpg";
 import benjaminMooreLogo from "../assets/images/benjamin-moore.png";
 import sherwinWilliamsLogo from "../assets/images/sherwin-williams.png";
 import homeDepotLogo from "../assets/images/home-depot.png";
@@ -43,26 +52,20 @@ export function Home() {
   }, [isProjectsOpen]);
 
   const projectGallery = [
-    {
-      title: "Professional Interior Work",
-      image: workSample1,
-    },
-    {
-      title: "Luxury Residential Finish",
-      image: workSample2,
-    },
-    {
-      title: "Modern High-Rise Interior",
-      image: workSample3,
-    },
-    {
-      title: "Elegant Ceiling Details",
-      image: workSample4,
-    },
-    {
-      title: "Luxury Living Space",
-      image: workSample5,
-    },
+    { title: "Luxury Wallpaper Installation", image: slide6 },
+    { title: "Professional Finish", image: slide5 },
+    { title: "Residential Project", image: slide1 },
+    { title: "Modern Interior", image: slide2 },
+    { title: "Elegant Design", image: slide3 },
+    { title: "Luxury Finish", image: slide4 },
+    { title: "Wallpaper Installation 1", image: high1 },
+    { title: "Wallpaper Installation 2", image: high2 },
+    { title: "Wallpaper Installation 3", image: high3 },
+    { title: "Wallpaper Installation 4", image: high4 },
+    { title: "Wallpaper Installation 5", image: high5 },
+    { title: "Wallpaper Installation 6", image: high6 },
+    { title: "Wallpaper Installation 7", image: high7 },
+    { title: "Wallpaper Installation 8", image: high8 },
   ];
 
   const stats = [
@@ -294,18 +297,23 @@ export function Home() {
           >
             
 
+            <p className="text-sm uppercase tracking-[0.3em] text-[#C6AC8E] mb-4 font-semibold">
+              Premium Wallpaper Installation Services in Dubai & Across the UAE
+            </p>
             <h2 className="text-5xl sm:text-7xl text-[#0A0908] font-bold mb-6 uppercase tracking-wider">
-              <span className="text-[#0A0908]">WALLPAPER</span>{" "}
-              <span className="text-[#0A0908]">INSTALLATION</span>
+              Luxury Wallpaper Fixing & Installation in{" "}
+              <span className="text-[#C6AC8E]">Dubai</span>
             </h2>
             <div className="w-32 h-1 bg-[#C6AC8E] mx-auto mb-8" />
             <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto mb-10">
-              Transform your space with our exclusive wallpaper collections.
-              Professional installation guaranteed.
+              Enhance your interiors with flawless, high-end wallpaper fixing. We
+              provide professional wallpaper installation in Dubai, delivering
+              precision craftsmanship, elegant finishes, and luxury results for
+              residential and commercial spaces.
             </p>
             <Link
               to="/services"
-              className="inline-flex items-center px-10 py-5 bg-[#C6AC8E] text-[#0A0908] text-lg font-bold uppercase tracking-wider rounded-lg hover:bg-[#0A0908] transition-all shadow-2xl hover:shadow-[#C6AC8E]/50 hover:scale-105"
+              className="inline-flex items-center px-10 py-5 bg-[#C6AC8E] text-[#0A0908] text-lg font-bold uppercase tracking-wider rounded-lg hover:bg-[#0A0908] hover:text-white transition-all shadow-2xl hover:shadow-[#C6AC8E]/50 hover:scale-105"
             >
               Explore All Collections
               <ArrowRight className="ml-3 w-6 h-6" />
@@ -543,6 +551,176 @@ export function Home() {
         </div>
       </section>
 
+      {/* Residential Wallpaper Installation Dubai */}
+      <section className="py-24 bg-[#22333B] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-4xl sm:text-5xl text-white mb-6">
+                Residential{" "}
+                <span className="text-[#C6AC8E]">Wallpaper Fixing</span>
+              </h2>
+              <div className="w-24 h-1 bg-[#C6AC8E] mb-8" />
+              <p className="text-xl text-gray-300 leading-relaxed">
+                Upgrade your home with stylish and professionally installed
+                wallpaper. We handle bedrooms, living rooms, dining areas, and
+                more—with minimal disruption and perfect results.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <img
+                src={slide5}
+                alt="Residential Wallpaper Installation"
+                className="w-full h-100 object-cover shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#C6AC8E] -z-10" />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Commercial & Hospitality Wallpaper Fixing UAE */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative order-2 lg:order-1"
+            >
+              <img
+                src={workSample2}
+                alt="Commercial Wallpaper Installation"
+                className="w-full h-[400px] object-cover shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#C6AC8E] -z-10" />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="order-1 lg:order-2"
+            >
+              <h2 className="text-4xl sm:text-5xl text-[#0A0908] mb-6">
+                Commercial{" "}
+                <span className="text-[#C6AC8E]">Wallpaper Fixing</span>
+              </h2>
+              <div className="w-24 h-1 bg-[#C6AC8E] mb-8" />
+              <p className="text-xl text-gray-600 leading-relaxed">
+                We provide reliable wallpaper installation for offices, shops,
+                hotels, restaurants, and other commercial spaces. Professional
+                service tailored to your business needs.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Expert Wallpaper Fixing & Installation Services */}
+      <section className="py-24 bg-linear-to-br from-[#EAE0D5] to-[#C6AC8E] relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%230A0908%22 fill-opacity=%220.03%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50" />
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-4xl sm:text-5xl text-[#0A0908] mb-6">
+              Expert Wallpaper Fixing &{" "}
+              <span className="text-[#22333B]">Installation Services</span>
+            </h2>
+            <div className="w-24 h-1 bg-[#0A0908] mx-auto mb-8" />
+            <p className="text-xl text-[#0A0908]/80 leading-relaxed mb-8">
+              Transform your space with flawless wallpaper installation done by
+              skilled professionals. Clean work, perfect finishes, and on-time
+              service—every time.
+            </p>
+            <div className="flex flex-wrap justify-center gap-6">
+              <div className="flex items-center gap-2 text-[#0A0908]">
+                <Sparkles className="w-6 h-6" />
+                <span className="font-semibold">Clean Work</span>
+              </div>
+              <div className="flex items-center gap-2 text-[#0A0908]">
+                <Award className="w-6 h-6" />
+                <span className="font-semibold">Perfect Finishes</span>
+              </div>
+              <div className="flex items-center gap-2 text-[#0A0908]">
+                <ThumbsUp className="w-6 h-6" />
+                <span className="font-semibold">On-Time Service</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Highlights Gallery */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[high1, high2, high3, high4, high5, high6, high7, high8].map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                className="overflow-hidden shadow-lg"
+              >
+                <img
+                  src={image}
+                  alt={`Wallpaper Installation ${index + 1}`}
+                  className="w-full h-64 object-cover"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Us CTA */}
+      <section className="py-20 bg-[#0A0908] relative overflow-hidden">
+        <div className="absolute inset-0 bg-linear-to-r from-[#C6AC8E]/10 to-transparent" />
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-4xl sm:text-5xl text-white mb-6">
+              Looking for Professional Wallpaper Fixing in{" "}
+              <span className="text-[#C6AC8E]">Dubai?</span>
+            </h2>
+            <p className="text-xl text-gray-300 mb-10">
+              Contact us today for a free consultation and quotation anywhere in
+              the UAE.
+            </p>
+            <Link
+              to="/contact"
+              className="inline-flex items-center px-10 py-5 bg-[#C6AC8E] text-[#0A0908] text-lg font-bold uppercase tracking-wider rounded-lg hover:bg-white transition-all shadow-2xl hover:shadow-[#C6AC8E]/50 hover:scale-105"
+            >
+              Get Free Consultation
+              <ArrowRight className="ml-3 w-6 h-6" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section - Enhanced */}
       <section className="py-32 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#C6AC8E]/5 to-transparent" />
@@ -554,52 +732,52 @@ export function Home() {
             className="text-center mb-20"
           >
             <h2 className="text-5xl sm:text-6xl text-[#0A0908] mb-6">
-              Why Choose <span className="text-[#0A0908]">CPB Pro</span>
+              Why Choose <span className="text-[#C6AC8E]">Us</span>
             </h2>
             <div className="w-24 h-1 bg-[#C6AC8E] mx-auto mb-6" />
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We deliver exceptional painting services with a commitment to
-              quality, professionalism, and customer satisfaction.
+              We deliver exceptional wallpaper installation services with a
+              commitment to quality, professionalism, and customer satisfaction.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: Paintbrush,
-                title: "Expert Craftsmanship",
+                icon: Users,
+                title: "Skilled Craftsmen",
                 description:
-                  "Our skilled painters deliver flawless results with attention to every detail.",
-              },
-              {
-                icon: Droplet,
-                title: "Quality Materials",
-                description:
-                  "We use only premium paints and materials for long-lasting, beautiful finishes.",
-              },
-              {
-                icon: Timer,
-                title: "Timely Completion",
-                description:
-                  "Projects completed on schedule without compromising on quality.",
-              },
-              {
-                icon: DollarSign,
-                title: "Competitive Pricing",
-                description:
-                  "Fair, transparent pricing with no hidden costs or surprises.",
+                  "Experienced professionals with extensive luxury project expertise for flawless installations.",
               },
               {
                 icon: Sparkles,
-                title: "Clean & Professional",
+                title: "Precision Alignment",
                 description:
-                  "We respect your space and leave it cleaner than we found it.",
+                  "Meticulous attention to detail ensuring seamless finishing on every wallpaper installation.",
               },
               {
                 icon: ThumbsUp,
-                title: "Satisfaction Guaranteed",
+                title: "Professional Execution",
                 description:
-                  "Your complete satisfaction is our top priority on every project.",
+                  "Clean, discreet, and professional service that respects your space and schedule.",
+              },
+              {
+                icon: Droplet,
+                title: "Premium Materials",
+                description:
+                  "We use only high-quality materials and professional tools for lasting results.",
+              },
+              {
+                icon: Paintbrush,
+                title: "Tailored Solutions",
+                description:
+                  "Customized wallpaper solutions designed specifically for exclusive interiors.",
+              },
+              {
+                icon: Award,
+                title: "Commitment to Excellence",
+                description:
+                  "Your complete satisfaction is our priority—we deliver excellence on every project.",
               },
             ].map((item, index) => {
               const IconComponent = item.icon;
@@ -756,14 +934,14 @@ export function Home() {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             {[
               {
-                image: workSample1,
-                title: "Professional Interior Work",
-                description: "Precision painting with meticulous attention to detail",
+                image: slide6,
+                title: "Luxury Wallpaper Installation",
+                description: "Premium wallpaper fixing for elegant interiors",
               },
               {
-                image: workSample2,
-                title: "Luxury Residential Finish",
-                description: "High-end finishes for sophisticated spaces",
+                image: slide5,
+                title: "Professional Finish",
+                description: "Expert craftsmanship with attention to every detail",
               },
             ].map((item, index) => (
               <motion.div
@@ -786,7 +964,7 @@ export function Home() {
                 <motion.div
                   initial={{ opacity: 0, y: 100 }}
                   whileHover={{ opacity: 1, y: 0 }}
-                  className="absolute inset-0 bg-gradient-to-t from-[#0A0908] via-[#0A0908]/80 to-transparent flex items-end p-8"
+                  className="absolute inset-0 bg-linear-to-t from-[#0A0908] via-[#0A0908]/80 to-transparent flex items-end p-8"
                 >
                   <div className="text-white">
                     <h3 className="text-3xl mb-3">{item.title}</h3>
@@ -798,22 +976,27 @@ export function Home() {
           </div>
 
           {/* Additional Project Gallery */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
               {
-                image: workSample3,
-                title: "Modern High-Rise Interior",
+                image: slide1,
+                title: "Residential Project",
                 category: "Residential",
               },
               {
-                image: workSample4,
-                title: "Elegant Ceiling Details",
-                category: "Custom Finish",
+                image: slide2,
+                title: "Modern Interior",
+                category: "Commercial",
               },
               {
-                image: workSample5,
-                title: "Luxury Living Space",
-                category: "Premium Project",
+                image: slide3,
+                title: "Elegant Design",
+                category: "Premium",
+              },
+              {
+                image: slide4,
+                title: "Luxury Finish",
+                category: "Custom",
               },
             ].map((item, index) => (
               <motion.div
@@ -833,7 +1016,7 @@ export function Home() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <motion.div className="absolute inset-0 bg-gradient-to-t from-[#C6AC8E]/90 via-[#C6AC8E]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <motion.div className="absolute inset-0 bg-linear-to-t from-[#C6AC8E]/90 via-[#C6AC8E]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                   <span className="text-[#0A0908] text-sm font-medium mb-2 uppercase tracking-wider">
                     {item.category}
                   </span>
@@ -854,7 +1037,7 @@ export function Home() {
             <button
               type="button"
               onClick={() => setIsProjectsOpen(true)}
-              className="inline-flex items-center px-8 py-4 bg-[#C6AC8E] text-[#0A0908] rounded-lg hover:bg-[#0A0908] transition-all hover:shadow-lg hover:shadow-[#C6AC8E]/50 group"
+              className="inline-flex items-center px-8 py-4 bg-[#C6AC8E] text-[#0A0908] rounded-lg hover:bg-[#0A0908] hover:text-white transition-all hover:shadow-lg hover:shadow-[#C6AC8E]/50 group"
             >
               View All Projects
               <ArrowRight

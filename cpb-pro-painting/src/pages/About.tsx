@@ -100,14 +100,16 @@ export function About() {
                 About <span className="text-[#C6AC8E]">CPB Pro Painting</span>
               </h1>
               <p className="text-xl text-gray-300 mb-6">
-                For over 15 years, CPB Pro Painting has been transforming spaces
-                with expert craftsmanship, quality materials, and unwavering
-                dedication to customer satisfaction.
+                We are a trusted luxury wallpaper fixing company in Dubai,
+                specializing in premium wallpaper installation for villas,
+                apartments, offices, hotels, and commercial properties across
+                the UAE.
               </p>
               <p className="text-lg text-gray-300">
-                We're more than just painters – we're partners in bringing your
-                vision to life. Every project, from a single room to an entire
-                building, receives our full attention and expertise.
+                With years of experience in wallpaper fixing services in the
+                United Kingdom, Vancouver, Canada and now in Dubai, our skilled
+                craftsmen ensure perfectly aligned, smooth, and long-lasting
+                finishes—designed to complement luxury interiors.
               </p>
             </div>
             <div className="relative">
@@ -152,9 +154,10 @@ export function About() {
                 PROJECTS
               </h2>
               <p className="text-lg text-gray-600 mb-10">
-                CPB Pro Painting is a fully-licensed, fully-insured professional
-                painting company specializing in house and office painting,
-                wallpaper installation and wall repair in Metro Vancouver.
+                We are a trusted luxury wallpaper fixing company in Dubai,
+                specializing in premium wallpaper installation for villas,
+                apartments, offices, hotels, and commercial properties across
+                the UAE.
               </p>
 
               {/* Features Grid */}

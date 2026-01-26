@@ -154,8 +154,8 @@ export function Services() {
             className="text-center"
           >
             <h1 className="text-5xl sm:text-7xl mb-6 uppercase tracking-wider">
-              <span className="text-[#0A0908]">WALLPAPER</span>{" "}
-              <span className="text-white">INSTALLATION</span>
+              <span className="text-white">WALLPAPER</span>{" "}
+              <span className="text-[#C6AC8E]">INSTALLATION</span>
             </h1>
 
             <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
@@ -165,11 +165,11 @@ export function Services() {
             </p>
 
             <div className="flex items-center justify-center gap-3 text-sm text-gray-300 uppercase tracking-widest mb-10">
-              <Link to="/" className="hover:text-[#0A0908] transition-colors">
+              <Link to="/" className="hover:text-[#C6AC8E] transition-colors">
                 HOME
               </Link>
-              <span className="text-[#0A0908]">/</span>
-              <span className="text-[#0A0908]">SERVICES</span>
+              <span className="text-[#C6AC8E]">/</span>
+              <span className="text-[#C6AC8E]">SERVICES</span>
             </div>
 
             <motion.div
@@ -179,7 +179,7 @@ export function Services() {
             >
               <Link
                 to="/contact"
-                className="inline-flex items-center px-10 py-5 bg-[#C6AC8E] text-[#0A0908] text-lg font-bold uppercase tracking-wider rounded-lg hover:bg-[#0A0908] transition-all shadow-2xl hover:shadow-[#C6AC8E]/50 hover:scale-105"
+                className="inline-flex items-center px-10 py-5 bg-[#C6AC8E] text-[#0A0908] text-lg font-bold uppercase tracking-wider rounded-lg hover:bg-white transition-all shadow-2xl hover:shadow-[#C6AC8E]/50 hover:scale-105"
               >
                 Book Free Consultation
                 <ArrowRight className="ml-3 w-6 h-6" />
